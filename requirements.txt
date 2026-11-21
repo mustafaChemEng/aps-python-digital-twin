@@ -1,0 +1,4 @@
+# Install AVEVA's simcentralconnect + pythonnet from your APS Scripting Interface SDK folder:
+#   pip install -r "<SDK folder>\requirements.txt"
+# Extra packages used by this project:
+matplotlib
