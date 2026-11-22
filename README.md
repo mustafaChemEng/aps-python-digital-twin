@@ -74,7 +74,8 @@ The PI runs in velocity form, with proportional action on the measurement, so a 
 | File | Purpose |
 |---|---|
 | `twin_loop.py` | The loop: `init` (steady snapshot), `open` (baseline), `closed` (PI control) |
-| `live_dashboard.py` | Live trends and KPIs from `twin.db` |
+| `live_dashboard.py` | Live trends and KPIs from `twin.db` (matplotlib) |
+| `dashboard_web.py` | Browser dashboard of the same data (Streamlit): `streamlit run dashboard_web.py` |
 | `dyn_probe.py` | Tests how `RunDynamics` behaves |
 | `list_vars.py` | Lists every variable and parameter of each model |
 | `make_snapshot.py` | Lists, creates and renames snapshots |
@@ -89,6 +90,7 @@ python twin_loop.py init
 python twin_loop.py open
 python twin_loop.py closed
 python live_dashboard.py        (in a second window)
+streamlit run dashboard_web.py  (optional browser dashboard; pip install streamlit)
 ```
 
 ## Next steps
